@@ -26,15 +26,15 @@
               Projeto
             </q-item-section>
           </q-item>
-        <q-item to="/portfolio" exact clickable v-ripple>
-          <q-item-section avatar>
-            <q-icon name="code" />
-          </q-item-section>
+<!--        <q-item to="/portfolio" exact clickable v-ripple>-->
+<!--          <q-item-section avatar>-->
+<!--            <q-icon name="code" />-->
+<!--          </q-item-section>-->
 
-          <q-item-section>
-           Github
-          </q-item-section>
-        </q-item>
+<!--          <q-item-section>-->
+<!--           Github-->
+<!--          </q-item-section>-->
+<!--        </q-item>-->
         <q-item
           to="/roulette"
           exact
@@ -49,15 +49,15 @@
           </q-item-section>
         </q-item>
 
-        <q-item to="/help" exact clickable v-ripple>
-          <q-item-section avatar>
-            <q-icon name="forum" />
-          </q-item-section>
+<!--        <q-item to="/help" exact clickable v-ripple>-->
+<!--          <q-item-section avatar>-->
+<!--            <q-icon name="forum" />-->
+<!--          </q-item-section>-->
 
-          <q-item-section>
-            Suporte
-          </q-item-section>
-        </q-item>
+<!--          <q-item-section>-->
+<!--            Suporte-->
+<!--          </q-item-section>-->
+<!--        </q-item>-->
       </q-scroll-area>
 
       <q-img class="absolute-top" src="../statics/mountains.png" style="height: 192px">
@@ -69,6 +69,12 @@
           <div class="q-ma-sm-sm">@olucasandrade</div>
         </div>
       </q-img>
+      <q-btn class="button-floating" title="PROMOÇÂO!" to="/roulette">
+        <div class="button-floating-gift">
+          <q-icon name="loyalty" />
+        </div>
+      </q-btn>
+
     </q-drawer>
 
     <q-page-container>
@@ -78,6 +84,7 @@
     </q-page-container>
   </q-layout>
 </template>
+
 <script>
 import { date } from 'quasar'
 
@@ -143,9 +150,24 @@ export default {
 </script>
 
 <style lang="scss">
-.header-image {
-  height: 100%;
-  z-index: -1;
-  opacity: 0.4;
-}
+  .header-image {
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  .button-floating {
+    position: fixed;
+    top: 419.5px;
+    width: 50px;
+    height: 100px;
+    border: none;
+    border-radius: 0px 90px 90px 0px;
+    z-index: 1003;
+    background-color: rgb(102, 23, 203);
+    cursor: pointer;
+    display: table;
+  }
+  .button-floating-gift {
+    color: rgb(255, 255, 255);
+  }
 </style>

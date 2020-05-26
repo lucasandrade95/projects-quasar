@@ -91,14 +91,15 @@ export default {
 </script>
 
 <style lang="scss">
-.done {
-  .q-item__label {
-    text-decoration: line-through;
-    color: #bbb;
+  .done {
+    .q-item__label {
+      text-decoration: line-through;
+      color: #bbb;
+    }
   }
-}
 
   .no-tasks {
     opacity: 0.5;
   }
+
 </style>
